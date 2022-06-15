@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/shop-details.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/mixitup.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- Loading -->
+    <div class="loader-wrapper">
+        <div class="middle">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+            <div class="bar bar4"></div>
+            <div class="bar bar5"></div>
+            <div class="bar bar6"></div>
+            <div class="bar bar7"></div>
+            <div class="bar bar8"></div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa-solid fa-envelope"></i> hello@colorlib.com</li>
+                                <li>Free Shipping for all Order of $99</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                            </div>
+                            <div class="header__top__right__language">
+                                <img src="./img/language.png" alt="">
+                                <div>English</div>
+                                <span class="arrow_carrot-down"></span>
+                                <ul>
+                                    <li><a href="#">Spanis</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <a href="#"><i class="fa fa-user"></i> Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li>
+                                <a href="./index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="./shop-grid.html">Shop</a>
+                            </li>
+                            <li class="active">
+                                <a href="#">Pages</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="./shop-details.html">Shop Details</a></li>
+                                    <li><a href="./shopping-cart.html">Shoping Cart</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">item: <span>$150.00</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa fa-bars"></i>
+                            <span>All departments</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="hero__search">
+                        <div class="hero__search__form">
+                            <form action="#">
+                                <div class="hero__search__categories">
+                                    All Categories
+                                    <span class="arrow_carrot-down"></span>
+                                </div>
+                                <input type="text" placeholder="What do yo u need?">
+                                <button type="submit" class="site-btn">SEARCH</button>
+                            </form>
+                        </div>
+                        <div class="hero__search__phone">
+                            <div class="hero__search__phone__icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="hero__search__phone__text">
+                                <h5>+65 11.188.888</h5>
+                                <span>support 24/7 time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="details-content">
+        <div class="breadcrumb__text">
+            <h2>Vegetable’s Package</h2>
+            <div class="breadcrumb__option">
+                <a href="#">Home - </a>
+                <a href="#">Vegetables - </a>
+                <span>Vegetable’s Package</span>
+            </div>
+        </div>
+        <main>
+            <section class="top2">
+                <section class="left">
+                    <div class="product__details__pic__item">
+                        <img class="product__details__pic__item--large"
+                            src="./img/product/details/product-details-1.jpg" alt="">
+                    </div>
+
+                    <div class="belowright">
+                        <img src="./img/product/product-2.jpg" alt="">
+                        <img src="./img/product/product-5.jpg" alt="">
+                        <img src="./img/product/product-7.jpg" alt="">
+                        <img src="./img/product/product-6.jpg" alt="">
+                    </div>
+                </section>
+                <section class="right">
+                    <div class="product__details__pic__info">
+                        <h3>Vetgetable’s Package</h3>
+
+                        <div class="product__details__rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <span>(18 reviews)</span>
+                        </div>
+
+                        <span class="money">$50.00</span>
+                        <p class="info">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam
+                            sit
+                            amet quam
+                            vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet
+                            quam
+                            vehicula elementum sed sit amet dui. Proin eget tortor risus.</p>
+                    </div>
+                    <div class="quantity">
+                        <div class="pro-qty">
+                            <span class="dec qtybtn">-</span>
+                            <input type="text" value="1">
+                            <span class="inc qtybtn">+</span>
+                        </div>
+
+                        <div>
+                            <a href="#" class="primary-btn">ADD TO CART</a>
+                        </div>
+
+                        <div><a href="#" class="heart-icon"><span class="icon_heart_alt">&#9825;</span></a></div>
+
+                    </div>
+                    <div class="availability">
+                        <ul>
+                            <li><b>Availability</b> <span>In Stock</span></li>
+                            <li><b>Shipping</b> <span>01 day shipping. <samp>Free pickup today</samp></span></li>
+                            <li><b>Weight</b> <span>0.5 kg</span></li>
+                            <li><b>Share on</b>
+                                <div class="share">
+
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+            <div class="or">
+                <div class="first"></div>
+                <span class="indent active">Description</span>
+                <span class="indent">Information</span>
+                <span class="indent">Reviews (1)</span>
+                <div class="second"></div>
+            </div>
+            <div class="info_or">
+                <div class="info-item active">
+                    <h3>Products Description</h3>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur corrupti quod suscipit omnis
+                        magnam enim provident, dolor culpa quasi deserunt quidem impedit hic cupiditate sit libero at
+                        possimus. Beatae neque, quaerat officia fugiat officiis, cupiditate cum, delectus provident
+                        praesentium quisquam doloremque. Incidunt labore optio saepe, impedit dolores porro laborum at
+                        quod, molestias dicta maiores eius excepturi atque? Repudiandae saepe, obcaecati sint, natus
+                        vitae deleniti, illum nesciunt expedita ut molestiae eveniet! Ullam dolorum sequi pariatur rem?
+                        Exercitationem laborum vero alias magnam, maiores quam ratione molestias reiciendis, nulla totam
+                        aliquid dolores facilis consectetur. Magnam quasi eos explicabo placeat atque laborum quidem
+                        similique id consequuntur laboriosam, mollitia asperiores repudiandae recusandae facilis,
+                        eligendi quae sed? Repellendus corrupti, eos earum corporis magni sequi dolorem tempore
+                        blanditiis odit rerum ullam fugiat deserunt sit delectus debitis veniam totam nesciunt
+                        cupiditate, incidunt ex ut odio aliquid? Soluta omnis aspernatur quos, tempore laudantium
+                        exercitationem tenetur qui amet. Quis repellat id minus eaque qui dolore iste necessitatibus
+                        dignissimos exercitationem obcaecati!<br> <br> Aliquam labore eum ipsum
+                        similique, minima adipisci consequuntur voluptas
+                        quaerat
+                        ab
+                        distinctio, libero cum deleniti? Sequi facilis eos natus perspiciatis, earum ipsa? Cupiditate
+                        nobis,
+                        vero ipsam reprehenderit perferendis officiis, expedita eveniet nesciunt dignissimos vel hic
+                        quibusdam
+                        officia ea nam ad quas eaque nihil ab! Nostrum voluptatem veritatis expedita? Illo dignissimos
+                        doloremque dolor autem ea? Vel voluptatum eos earum, eius enim, recusandae consectetur ipsa ut
+                        expedita
+                        ea dolore ducimus, sapiente dolorum veritatis accusamus ratione esse sed voluptatem minus.
+                    </p>
+                </div>
+                <div class="info-item">
+                    <h3>Products Infomation</h3>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati unde dolore odit, temporibus
+                        tempore,
+                        nesciunt perferendis, consequatur beatae nisi officia quia fuga dolorum nostrum quaerat amet
+                        recusandae!
+                        Assumenda veritatis aliquam ducimus distinctio consectetur quae velit perferendis tempora at
+                        iure
+                        neque
+                        corporis placeat accusantium accusamus natus, numquam voluptate pariatur! Quam quidem magnam
+                        veritatis
+                        officiis, dicta impedit tempore assumenda? Reiciendis repellat neque delectus quis nobis
+                        suscipit
+                        sint,
+                        eveniet, id ab minus fuga eligendi molestiae consequuntur excepturi facere, cum ipsum quam
+                        reprehenderit
+                        pariatur. Dolorum enim iusto eum ut accusamus laudantium nostrum mollitia ipsam ad voluptate
+                        natus
+                        odio
+                        illo dolor et adipisci soluta nobis suscipit provident optio consectetur ipsum repudiandae,
+                        totam
+                        doloribus? Culpa rem, saepe libero velit suscipit veniam consequatur obcaecati totam eveniet
+                        eius
+                        vero
+                        porro ex.<br> <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae tempora
+                        accusantium maxime id harum maiores temporibus doloremque ad quisquam reprehenderit obcaecati
+                        nostrum quos officiis cum magnam minima, ab dolore. Ducimus, incidunt sint optio laboriosam, est
+                        cum vitae rerum beatae itaque non, nulla quidem debitis! Ipsam, blanditiis ut maxime unde
+                        aperiam expedita corrupti doloribus, voluptate explicabo praesentium illum quasi, quia magni
+                        ducimus exercitationem nobis. Alias aperiam totam aut molestias ad rem officiis rerum
+                        voluptatibus magni earum consequuntur, ullam nostrum! Sapiente, et?
+                    </p>
+                </div>
+                <div class="info-item">
+                    <h3>Products Reviews</h3>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati unde dolore odit, temporibus
+                        tempore,
+                        nesciunt perferendis, consequatur beatae nisi officia quia fuga dolorum nostrum quaerat amet
+                        recusandae!
+                        Assumenda veritatis aliquam ducimus distinctio consectetur quae velit perferendis tempora at
+                        iure
+                        neque
+                        corporis placeat accusantium accusamus natus, numquam voluptate pariatur! Quam quidem magnam
+                        veritatis
+                        officiis, dicta impedit tempore assumenda? Reiciendis repellat neque delectus quis nobis
+                        suscipit
+                        sint,
+                        eveniet, id ab minus fuga eligendi molestiae consequuntur excepturi facere, cum ipsum quam
+                        reprehenderit
+                        pariatur. Dolorum enim iusto eum ut accusamus laudantium nostrum mollitia ipsam ad voluptate
+                        natus
+                        odio
+                        illo dolor et adipisci soluta nobis suscipit provident optio consectetur ipsum repudiandae,
+                        totam
+                        doloribus? Culpa rem, saepe libero velit suscipit veniam consequatur obcaecati totam eveniet
+                        eius
+                        vero
+                        porro ex.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="featured spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Related Product</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row featured__filter featured__row">
+                <div class="col-lg-3  mix fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Lorem, ipsum dolor.</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  mix fruit">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-2.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Lorem, ipsum dolor.</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  mix fruit">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-3.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Lorem, ipsum dolor.</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  mix fruit">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-4.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Lorem, ipsum dolor.</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section Begin -->
+    <footer id="footer">
+        <div class="container_top">
+            <div class="footer_about">
+                <img src="./img/logo.png" alt="" class="logo_img">
+                <ul>
+                    <li>Address: Số 288 Đường Nguyễn Văn Linh, Hưng Lợi, Ninh Kiều, Cần Thơ</li>
+                    <li>Phone: +84 *** *** ***</li>
+                    <li>Email:&ensp;thaitqpc04444@fpt.edu.vn
+                        <br>
+                        &ensp;&emsp;&emsp;&ensp;khoatdpc04409@fpt.edu.vn
+                        <br>
+                        &ensp;&emsp;&emsp;&ensp;duclmpc04605@fpt.edu.vn
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_widget">
+                <h6>Useful Links</h6>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">About Our Shop</a></li>
+                    <li><a href="#">Secure Shopping</a></li>
+                    <li><a href="#">Delivery infomation</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Our Sitemap</a></li>
+                </ul>
+                <ul>
+                    <li></li>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Innovation</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer_widget">
+                <h6>Join Our Newsletter Now</h6>
+                <p>Get E-mail updates about our latest shop and special offers.</p>
+                <form action="#">
+                    <input type="text" placeholder="Enter your mail">
+                    <button type="submit" class="site-btn">SUBSCRIBE</button>
+                </form>
+                <div class="footer_widget_social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container_bottom">
+            <div class="footer_copyright">
+                <div class="footer_copyright_text">
+                    <p>Copyright ©2022 All rights reserved | This template is made with <i
+                            class="fa-solid fa-heart"></i> by
+                        <span>Group 3</span>
+                    </p>
+                </div>
+            </div>
+            <div class="footer_copyright_payment">
+                <img src="./img/payment-item.png" alt="">
+            </div>
+        </div>
+        </foot>
+        <!-- Footer Section End -->
+        <script src="./js/app.js"></script>
+</body>
+
+</html>
