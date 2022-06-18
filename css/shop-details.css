@@ -112,14 +112,14 @@ h2 {
 }
 
 .product__details__pic__info .money {
-    font-size: 50px;
+    font-size: 40px;
     color: #dd2222;
     font-weight: 400;
     margin-bottom: 15px;
 }
 
 .product__details__pic__info .info {
-    font-size: 22px;
+    font-size: 18px;
     font-family: "Cairo", sans-serif;
     color: #6f6f6f;
     font-weight: 400;
@@ -129,9 +129,8 @@ h2 {
     margin-top: 20px;
     margin-bottom: 40px;
     padding-right: 20px;
+    line-height: 1.6;
 }
-
-
 
 .primary-btn {
     display: inline-block;
