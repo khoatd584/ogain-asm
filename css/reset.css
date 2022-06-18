@@ -5,8 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Cairo', sans-serif;
-    user-select: none;
-    cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1055.ani), url(https://cur.cursors-4u.net/cursors/cur-11/cur1055.png), auto !important;
+    /* user-select: none; */
 }
 
 html,

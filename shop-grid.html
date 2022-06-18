@@ -13,10 +13,16 @@
     <link rel="icon" href="favicon-32x32.png" type="image/x-icon" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./font/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/mixitup.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -103,7 +109,7 @@
                     <div class="header__cart">
                         <ul>
                             <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                            <li><a href="./shopping-cart.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a>
                         </ul>
                         <div class="header__cart__price">item: <span>$150.00</span></div>
                     </div>
@@ -185,10 +191,18 @@
                     <div class="sidebar__item">
                         <h4>Price</h4>
                         <div class="price-range-wrap">
-                            <input class="range" type="range" min="10" max="540">
-                        </div>
-                        <div class="price-text">
-                            <p>$10 - $540</p>
+                            <div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
+                                data-min="10" data-max="540">
+                                <div class="ui-slider-range ui-corner-all ui-widget-header"></div>
+                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                            </div>
+                            <div class="range-slider">
+                                <div class="price-input">
+                                    <input type="text" id="minamount">
+                                    <input type="text" id="maxamount">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="sidebar__item sidebar__item__color--option">
@@ -268,7 +282,7 @@
                                 <img src="./img/latest-product/lp-1.jpg" alt="">
                             </div>
                             <div class="latest-product__item__text">
-                                <h6>Crab Pool Security</h6>
+                                <h6>Rau chân vịt</h6>
                                 <span>$30.00</span>
                             </div>
                         </a>
@@ -277,7 +291,7 @@
                                 <img src="./img/latest-product/lp-2.jpg" alt="">
                             </div>
                             <div class="latest-product__item__text">
-                                <h6>Crab Pool Security</h6>
+                                <h6>Ớt chuông</h6>
                                 <span>$30.00</span>
                             </div>
                         </a>
@@ -286,44 +300,21 @@
                                 <img src="./img/latest-product/lp-3.jpg" alt="">
                             </div>
                             <div class="latest-product__item__text">
-                                <h6>Crab Pool Security</h6>
+                                <h6>Đùi gà chiên</h6>
                                 <span>$30.00</span>
                             </div>
                         </a>
                     </div>
                 </div>
-                <!--  -->
                 <div class="product__discount">
                     <div class="product__discount__title">
                         <h2>Sale Off</h2>
                     </div>
                     <div class="featured spad">
-                        <!-- <div class="wrapper"> -->
-                        <div class="rows featured__filter featured__row">
-                            <!-- <di class="col-lg-3 mix fresh-meat"> -->
-                            <div class="featured__item">
-                                <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg">
-                                    <div class="product__discount__percent">-20%</div>
-                                    <ul class="featured__item__pic__hover">
-                                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="product__discount__item__text">
-                                    <span>Vegetables</span>
-                                    <h5><a href="#">Vegetables’package</a></h5>
-                                    <div class="product__item__price">
-                                        $30.00
-                                        <span>$36.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- < -->
-                            <!-- <div class="col-lg-3 mix fruit"> -->
-                            <div class="featured__item">
-                                <div class="featured__item__pic set-bg">
-                                    <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-2.jpg">
+                        <div class="rows featured__filter featured__rows swiper swiper-wrapper">
+                            <div class="swiper">
+                                <div class="featured__item swiper-slide">
+                                    <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-4.jpg">
                                         <div class="product__discount__percent">-20%</div>
                                         <ul class="featured__item__pic__hover">
                                             <li><a href="#"><i class="fa fa-heart"></i></a></li>
@@ -331,43 +322,59 @@
                                             <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <div class="featured__item__text">
-                                        <h6><a href="#">Lorem, ipsum dolor.</a></h6>
-                                        <h5>$30.00</h5>
+                                    <div class="product__discount__item__text">
+                                        <span>Fruit</span>
+                                        <h5><a href="#">Dưa hấu</a></h5>
+                                        <div class="product__item__price">
+                                            $30.00
+                                            <span>$36.00</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="product__discount__item__text">
-                                    <span>Vegetables</span>
-                                    <h5><a href="#">Vegetables’package</a></h5>
-                                    <div class="product__item__price">
-                                        $30.00
-                                        <span>$36.00</span>
+                                <div class="featured__item swiper-slide">
+                                    <div class="featured__item__pic set-bg">
+                                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-8.jpg">
+                                            <div class="product__discount__percent">-20%</div>
+                                            <ul class="featured__item__pic__hover">
+                                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="featured__item__text">
+                                            <h6><a href="#">Lorem, ipsum dolor.</a></h6>
+                                            <h5>$30.00</h5>
+                                        </div>
+                                    </div>
+                                    <div class="product__discount__item__text">
+                                        <span>Fruit</span>
+                                        <h5><a href="#">Táo</a></h5>
+                                        <div class="product__item__price">
+                                            $30.00
+                                            <span>$36.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="featured__item swiper-slide">
+                                    <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-10.jpg">
+                                        <div class="product__discount__percent">-20%</div>
+                                        <ul class="featured__item__pic__hover">
+                                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product__discount__item__text">
+                                        <span>Fruit</span>
+                                        <h5><a href="#">Cam</a></h5>
+                                        <div class="product__item__price">
+                                            $30.00
+                                            <span>$36.00</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- </div> -->
-                            <!-- <div class="col-lg-3 mix fruit"> -->
-                            <div class="featured__item">
-                                <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-3.jpg">
-                                    <div class="product__discount__percent">-20%</div>
-                                    <ul class="featured__item__pic__hover">
-                                        <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="product__discount__item__text">
-                                    <span>Dried Fruit</span>
-                                    <h5><a href="#">Mixed Fruitss</a></h5>
-                                    <div class="product__item__price">
-                                        $30.00
-                                        <span>$36.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- </div> -->
                         </div>
-                        <!-- </div> -->
                         <div class="owl-dots">
                             <button role="button" class="owl-dot active-dots">
                                 <span></span>
@@ -378,7 +385,6 @@
                         </div>
                     </div>
                     <div class="filter__item">
-                        <!-- <div class="row"> -->
                         <div class="filter__sort">
                             <span>Sort By</span>
                             <div class="nice-select">
@@ -418,7 +424,7 @@
                                     </div>
                                     <div class="product__item__text">
                                         <h6>
-                                            <a href="#">Crab Pool Security</a>
+                                            <a href="#">Thịt bò</a>
                                         </h6>
                                         <h5>$30.00</h5>
                                     </div>
@@ -442,7 +448,7 @@
                                     </div>
                                     <div class="product__item__text">
                                         <h6>
-                                            <a href="#">Crab Pool Security</a>
+                                            <a href="#">Chuối</a>
                                         </h6>
                                         <h5>$30.00</h5>
                                     </div>
@@ -466,7 +472,7 @@
                                     </div>
                                     <div class="product__item__text">
                                         <h6>
-                                            <a href="#">Crab Pool Security</a>
+                                            <a href="#">Ổi ruột đỏ</a>
                                         </h6>
                                         <h5>$30.00</h5>
                                     </div>
@@ -497,7 +503,7 @@
                                         </div>
                                         <div class="product__item__text">
                                             <h6>
-                                                <a href="#">Crab Pool Security</a>
+                                                <a href="#">Nho</a>
                                             </h6>
                                             <h5>$30.00</h5>
                                         </div>
@@ -521,7 +527,7 @@
                                         </div>
                                         <div class="product__item__text">
                                             <h6>
-                                                <a href="#">Crab Pool Security</a>
+                                                <a href="#">Hamburger</a>
                                             </h6>
                                             <h5>$30.00</h5>
                                         </div>
@@ -545,7 +551,7 @@
                                         </div>
                                         <div class="product__item__text">
                                             <h6>
-                                                <a href="#">Crab Pool Security</a>
+                                                <a href="#">Xoài</a>
                                             </h6>
                                             <h5>$30.00</h5>
                                         </div>
@@ -575,7 +581,7 @@
                                         </div>
                                         <div class="product__item__text">
                                             <h6>
-                                                <a href="#">Crab Pool Security</a>
+                                                <a href="#">Dưa hấu</a>
                                             </h6>
                                             <h5>$30.00</h5>
                                         </div>
@@ -599,7 +605,7 @@
                                         </div>
                                         <div class="product__item__text">
                                             <h6>
-                                                <a href="#">Crab Pool Security</a>
+                                                <a href="#">Táo</a>
                                             </h6>
                                             <h5>$30.00</h5>
                                         </div>
@@ -623,7 +629,7 @@
                                         </div>
                                         <div class="product__item__text">
                                             <h6>
-                                                <a href="#">Crab Pool Security</a>
+                                                <a href="#">Quả mận Bakalland</a>
                                             </h6>
                                             <h5>$30.00</h5>
                                         </div>
@@ -653,7 +659,7 @@
                                         </div>
                                         <div class="product__item__text">
                                             <h6>
-                                                <a href="#">Crab Pool Security</a>
+                                                <a href="#">Đùi gà chiên</a>
                                             </h6>
                                             <h5>$30.00</h5>
                                         </div>
@@ -677,7 +683,7 @@
                                         </div>
                                         <div class="product__item__text">
                                             <h6>
-                                                <a href="#">Crab Pool Security</a>
+                                                <a href="#">Nước ép Tropicana cam</a>
                                             </h6>
                                             <h5>$30.00</h5>
                                         </div>
@@ -701,7 +707,7 @@
                                         </div>
                                         <div class="product__item__text">
                                             <h6>
-                                                <a href="#">Crab Pool Security</a>
+                                                <a href="#">Combo trái cây</a>
                                             </h6>
                                             <h5>$30.00</h5>
                                         </div>
@@ -795,6 +801,7 @@
         </foot>
         <!-- Footer Section End -->
         <script src="./js/app.js"></script>
+        <script src="./js/shop-grid.js"></script>
 </body>
 
 </html>

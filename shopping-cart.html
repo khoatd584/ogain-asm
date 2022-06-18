@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/shopping-cart.css">
     <link rel="icon" href="favicon-32x32.png" type="image/x-icon" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./font/fontawesome-free-6.1.1-web/css/all.min.css">
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/mixitup.min.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
+    <!-- <script src="./js/owl.carousel.min.js"></script> -->
     <script src="./js/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -62,7 +63,7 @@
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
-                                <a href="#"><i class="fa fa-user"></i> Login</a>
+                                <a href="./login.html"><i class="fa fa-user"></i> Login</a>
                             </div>
                         </div>
                     </div>
@@ -102,7 +103,8 @@
                     <div class="header__cart">
                         <ul>
                             <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                            <li><a href="./shopping-cart.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a>
+                            </li>
                         </ul>
                         <div class="header__cart__price">item: <span>$150.00</span></div>
                     </div>
@@ -152,6 +154,13 @@
             </div>
         </div>
     </section>
+    <div class="breadcrumb__text">
+        <h2>Shopping Cart</h2>
+        <div class="breadcrumb__option">
+            <a href="#">Home -</a>
+            <span>Shopping Cart</span>
+        </div>
+    </div>
     <main class="container">
 
         <div class="shoping__cart__table">
@@ -168,76 +177,112 @@
                 <tbody>
                     <tr>
                         <td class="shoping__cart__item">
-                            <img src="img/product-details-1.jpg" alt="" width="5%">
-                            <h5>Vegetable’s Package</h5>
+                            <img src="./img/product/details/product-details-1.jpg" alt="" width="15%">
+                            <h5>Combo trái cây</h5>
                         </td>
                         <td class="shoping__cart__price">
                             $55.00
                         </td>
                         <td class="shoping__cart__quantity">
-                            <div class="quantity">
-                                <div class="pro-qty"><span class="dec qtybtn">-</span>
-                                    <input type="text" value="1">
-                                    <span class="inc qtybtn">+</span>
-                                </div>
+                            <div class="col-cart-3">
+                                <button id="decrement">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <span id="quantity">2</span>
+                                <button id="increment">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
                             </div>
                         </td>
                         <td class="shoping__cart__total">
                             $110.00
                         </td>
                         <td class="shoping__cart__item__close">
-                            <span class="icon_close"></span>
+                            <span class="fa-solid fa-xmark"></span>
                         </td>
                     </tr>
+
                     <tr>
                         <td class="shoping__cart__item">
-                            <img src="img/cart/cart-2.jpg" alt="">
-                            <h5>Fresh Garden Vegetable</h5>
+                            <img src="./img/product/details/product-details-2.jpg" alt="" width="15%">
+                            <h5>Ớt chuông</h5>
                         </td>
                         <td class="shoping__cart__price">
-                            $39.00
+                            $39.99
                         </td>
                         <td class="shoping__cart__quantity">
-                            <div class="quantity">
-                                <div class="pro-qty"><span class="dec qtybtn">-</span>
-                                    <input type="text" value="1">
-                                    <span class="inc qtybtn">+</span>
-                                </div>
+                            <div class="col-cart-3">
+                                <button id="decrement">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <span id="quantity">1</span>
+                                <button id="increment">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
                             </div>
                         </td>
                         <td class="shoping__cart__total">
                             $39.99
                         </td>
                         <td class="shoping__cart__item__close">
-                            <span class="icon_close"></span>
+                            <span class="fa-solid fa-xmark"></span>
                         </td>
                     </tr>
+
                     <tr>
                         <td class="shoping__cart__item">
-                            <img src="img/cart/cart-3.jpg" alt="">
-                            <h5>Organic Bananas</h5>
+                            <img src="./img/product/details/product-details-3.jpg" alt="" width="15%">
+                            <h5>Rau chân vịt</h5>
                         </td>
                         <td class="shoping__cart__price">
-                            $69.00
+                            $69.99
                         </td>
                         <td class="shoping__cart__quantity">
-                            <div class="quantity">
-                                <div class="pro-qty"><span class="dec qtybtn">-</span>
-                                    <input type="text" value="1">
-                                    <span class="inc qtybtn">+</span>
-                                </div>
+                            <div class="col-cart-3">
+                                <button id="decrement">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <span id="quantity">1</span>
+                                <button id="increment">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
                             </div>
                         </td>
                         <td class="shoping__cart__total">
                             $69.99
                         </td>
                         <td class="shoping__cart__item__close">
-                            <span class="icon_close"></span>
+                            <span class="fa-solid fa-xmark"></span>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
+        <section class="uppdate">
+            <div class="upl"><span>CONTINUE SHOPPING</span></div>
+            <div class="upr"><i class="fa-solid fa-spinner"></i><span> UPADATE CART</span></div>
+        </section>
+        <section class="uppdate2">
+            <div class="upl2">
+                <h2>Discount Codes</h2>
+                <div class="upl2all">
+                    <div class="cupon">
+                        <input type="text" class="inp" placeholder="Enter your coupon code">
+                    </div>
+                    <div class="apl"><span>Apply Coupon</span></div>
+                </div>
+            </div>
+            <div class="upr2">
+                <h2>Cart Total</h2>
+                <div class="uptop">
+                    <h5>Subtotal</h5> <span>$454.98</span>
+                </div>
+                <div class="uptop">
+                    <h5>Total</h5> <span class="total-price">$454.98</span>
+                </div>
+                <div class="ceck"><span>PROCEED TO CHECKOUT</span></div>
+            </div>
+        </section>
     </main>
     <!-- Footer Section Begin -->
     <footer id="footer">
@@ -305,6 +350,7 @@
         </div>
         </foot>
         <!-- Footer Section End -->
+        <script src="./cart.js"></script>
         <script src="./js/app.js"></script>
 </body>
 
